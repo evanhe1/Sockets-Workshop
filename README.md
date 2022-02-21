@@ -176,7 +176,7 @@ You can even open ```index.html``` on a few different tabs to simulate different
 ## Conclusion
 Today we learned about the WebSockets protocol and the benefits that it offers over HTTP in mitigating overhead during realtime communication. As an example, we used the JavaScript Socket.io library implement a basic chat app to illustrate a primary use case for sockets.
 
-To learn more about the WebSockets protocol and Socket.io, check out the links in the ![Additional Resources](#additional-resources) section below. Thank you all so much!
+To learn more about the WebSockets protocol and Socket.io, check out the links in the **Additional Resources** section below. Thank you all so much!
 
 ## Additional Resources
 
