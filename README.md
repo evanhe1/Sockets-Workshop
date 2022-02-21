@@ -167,7 +167,11 @@ Test the app by first navigating to the ```server``` folder and running the comm
 
 Then, view the ```index.html``` file in the browser. Send a few messages and they should appear on the screen:
 
+![Single Window Test](images/single-window-test.png)
+
 You can even open ```index.html``` on a few different tabs to simulate different clients. Sending messages with different clients will result in different IDs appearing on these messages:
+
+![Multi Window Test](images/multi-window-test.png)
 
 ## Conclusion
 Today we learned about the WebSockets protocol and the benefits that it offers over HTTP in mitigating overhead during realtime communication. As an example, we used the JavaScript Socket.io library implement a basic chat app to illustrate a primary use case for sockets.
