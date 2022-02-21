@@ -1,8 +1,14 @@
 # WebSockets Introduction
 ## Table of Contents
 
-[Introduction](#introduction)
-
+- [Introduction](#introduction)
+- [Example: Chat App](#example-chat-app) 
+  - [Server Setup](#server-setup)
+  - [Writing Server Code](#writing-server-code)
+  - [Writing Client Code](#writing-client-code)
+  - [Testing](#testing)
+- [Conclusion](#conclusion)
+- [Additional Resources](#additional-resources)
 ## Introduction
 
 Traditional HTTP (hypertext transfer protocol) follows a request/response paradigm. The client establishes a connection with the server, and then submits a request via this connection. The server will respond to this request with the appropriate response, and then the connection will close. 
@@ -15,7 +21,7 @@ There are several limitations to relying exclusively on this model of communcati
 
 WebSockets come in handy for addressing this issue. Under this protocol, the client will establish a connection to the server with an HTTP request. However, after a connection is established, it will persist under one side explicitly closes it. While the connection is open, both the server and client will be able to continuously send data back and forth, avoiding the aforementioned overhead.
 
-## Creating our Chat App Demo
+## Example: Chat App
 
 We will be further exploring the WebSocket protocol using Socket.io, a JavaScript library that will make setting up realtime two-way connections much easier! Our demo will be a basic implementation of one of the primary uses realtime communication: a chat application.
 
@@ -151,7 +157,11 @@ Finally, to provide ```index.html``` access to the client logic, add the followi
 <script src="app.js"></script>
 ```
 
-This completes the implementation of our chat app. Test the app by first navigating to the ```server``` folder and running the command
+This completes the implementation of our chat app. 
+
+### Testing
+
+Test the app by first navigating to the ```server``` folder and running the command
 
 ```node index.js```
 
@@ -162,7 +172,10 @@ You can even open ```index.html``` on a few different tabs to simulate different
 ## Conclusion
 Today we learned about the WebSockets protocol and the benefits that it offers over HTTP in mitigating overhead during realtime communication. As an example, we used the JavaScript Socket.io library implement a basic chat app to illustrate a primary use case for sockets.
 
-To learn more about the WebSockets protocol and Socket.io, check out the links in the ![Additional Resources](additional-resources) section below. Thank you all so much!
+To learn more about the WebSockets protocol and Socket.io, check out the links in the ![Additional Resources](#additional-resources) section below. Thank you all so much!
 
 ## Additional Resources
 
+- [Websockets API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [socket.io Source Code](https://github.com/socketio/socket.io)
+- [socket.io-client Source Code](https://github.com/socketio/socket.io-client)
