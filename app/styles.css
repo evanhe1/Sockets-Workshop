@@ -1,0 +1,35 @@
+#messages {
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+#messages > li:nth-child(odd) {
+  background: #efefef;
+}
+
+.flex-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+}
+
+input {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-family: sans-serif;
+}
